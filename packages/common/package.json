@@ -1,0 +1,19 @@
+{
+  "name": "@wow/common",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-native": "^0.71.6"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  }
+}
