@@ -1,4 +1,6 @@
-module.exports = {
+const withTM = require("next-transpile-modules")(["nativewind"]);
+
+const nextConfig = {
   webpack: (config) => {
     config.resolve.alias = {
       ...(config.resolve.alias || {}),
@@ -14,3 +16,5 @@ module.exports = {
     return config;
   },
 };
+
+module.exports = withTM(nextConfig);

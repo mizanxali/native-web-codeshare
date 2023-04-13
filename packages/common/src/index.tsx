@@ -1,28 +1,19 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native-web";
+import { Text, View } from "react-native";
+import { styled } from "nativewind";
+
+const StyledView = styled(View);
+const StyledText = styled(Text);
 
 export const App = () => {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Hello World</Text>
-      <Text style={styles.text}>This is cool!</Text>
-    </View>
+    <StyledView className="w-full border-2 border-yellow-400 rounded-lg flex items-center justify-center">
+      <StyledText className="text-blue-700 font-bold text-2xl uppercase">
+        Hello World
+      </StyledText>
+      <StyledText className="text-blue-700 font-bold text-2xl uppercase">
+        This is cool!
+      </StyledText>
+    </StyledView>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    width: "100%",
-    borderWidth: 2,
-    borderColor: "red",
-    borderRadius: 4,
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  text: {
-    fontWeight: "700",
-    color: "white",
-    fontSize: 18,
-  },
-});
